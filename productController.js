@@ -4,10 +4,6 @@ var router = express.Router()
 var mongoose = require('mongoose')
 mongoose.connect('mongodb://localhost/products')
 
-var productSchema = new mongoose.Schema({
-    name: String,
-    price: Number
-})
 
 var Product = mongoose.model("Product", productSchema)
 
